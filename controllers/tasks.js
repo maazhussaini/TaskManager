@@ -1,10 +1,10 @@
+const Task = require('../models/tasks')
+
 const getAllTasks = (req, res) => {
     res.send('Get all tasks')
 }
 
 const createTask = (req, res) => {
-    // res.status(200).json({ message: 'ok' })
-    
     res.status(200).json(req.body)
 }
 
